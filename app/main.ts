@@ -12,7 +12,7 @@ import { bootstrap }    from '@angular/platform-browser-dynamic';
     <h1>Todo List</h1>
     
     <div *ngFor="let task of todos | async">
-        {{ task }} 
+        <a href = '#'>{{ task }} </a> 
     </div>
     
     <form  (ngSubmit)="onSubmit()">

@@ -24,7 +24,7 @@ var TodoClass = (function () {
     TodoClass = __decorate([
         core_1.Component({
             selector: 'todo',
-            template: "\n    <h1>Todo List</h1>\n    \n    <div *ngFor=\"let task of todos | async\">\n        {{ task }} \n    </div>\n    \n    <form  (ngSubmit)=\"onSubmit()\">\n      <div>\n        <input type=\"text\" required placeholder = \"Type your task\" \n        [(ngModel)]=\"comingtask\" name=\"comingtask\">\n      </div>\n      <button type=\"submit\">Submit</button>\n    </form>\n    \n    \n    "
+            template: "\n    <h1>Todo List</h1>\n    \n    <div *ngFor=\"let task of todos | async\">\n        <a href = '#'>{{ task }} </a> \n    </div>\n    \n    <form  (ngSubmit)=\"onSubmit()\">\n      <div>\n        <input type=\"text\" required placeholder = \"Type your task\" \n        [(ngModel)]=\"comingtask\" name=\"comingtask\">\n      </div>\n      <button type=\"submit\">Submit</button>\n    </form>\n    \n    \n    "
         }), 
         __metadata('design:paramtypes', [])
     ], TodoClass);
